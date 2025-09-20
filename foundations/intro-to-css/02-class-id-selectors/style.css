@@ -1,1 +1,26 @@
 /* Add CSS Styling */
+/* Reset basique pour uniformité */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}*/
+
+.impair{
+    background-color: rgb(255, 166, 181);
+    font-family: Verdana, DejaVu, sans-serif;
+}
+
+#chiffre2 {
+    color: rgb(0, 0, 255);
+    font-size: 36px;
+}
+
+.ajuster-la-taille-de-la-police {
+    font-size: 24px;
+}
+
+#chiffre4 {
+    background-color: rgb(144, 238, 144);
+    font-weight: 700; /* 700 equivalent de bold*/
+}
