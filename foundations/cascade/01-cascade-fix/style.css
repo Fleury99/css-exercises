@@ -17,19 +17,28 @@ body {
   font-size: 22px;
 }
 
-.confirm {
-  background: green;
-  color: white;
-  font-weight: bold;
-} 
-
 .button {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   font-size: 20px;
 }
 
-.child {
+
+/*.button vient après .confirm dans le fichier, la cascade écrase les couleurs du bouton “Confirm” !
+(Même spécificité, donc c’est la dernière règle dans l’ordre qui gagne.) SOLUTION Je place .button avant .confirm dans le CSS.
+Ainsi .confirm garde la priorité pour le bouton vert. */
+.confirm {
+  background: green;
+  color: white;
+  font-weight: bold;
+} 
+
+/* Ici y'a deux option de solution soit .child je place .child avant div.text soit modifie .child par un selecteur plus précis .text.child J'ai opté pour l'option 2 */
+/*.child et div.text ont la même spécificité (une seule classe).
+Mais comme div.text est écrit après, il écrase les styles de .child.
+Déplacer .child après div.text,ou Rendre .child plus spécifique, par exemple: .text.child*/
+
+.text.child {
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
