@@ -1,3 +1,7 @@
+/*
+  outline: 1px solid red; astuce pour afficher les contour pour quand on apprend c'est plus simple de voir ce qui se passe
+*/
+
 body {
   background: #eee;
   font-family: sans-serif;
@@ -6,22 +10,35 @@ body {
 .card {
   width: 400px;
   background: #fff;
-  margin: 16px auto;
+  margin: 16px auto; /* centre la carte horizontalement dans le conteneur  avec auto*/
+  padding: 8px;
 }
 
 .title {
   background: #e3f4ff;
+  padding: 8px 8px;
+  font-size: 16px; /* police du titre */
+  margin-bottom: 16px;
 }
 
 .content {
   background: #e3f4ff;
+  margin-bottom: 16px;
+  padding: 8px 8px; /* Contenu : 8px haut/bas, 8px côtés */
 }
 
 .button-container {
   background: #e3f4ff;
+  text-align: center;/* centre tout le contenu à l’intérieur */
+  padding: 8px 8px; /* Contenu : 8px haut/bas, 8px côtés */
 }
 
 button {
   background: white;
   border: 1px solid #eee;
+  display: block;
+  margin: 0 auto; /* centre le bouton horizontalement dans le conteneur  avec auto */
+  padding: 8px 16px; /* Contenu : 8px haut/bas, 16px côtés à l'interiur du bouton*/
+
+  /*Pour centrer un élément horizontalement, il faut qu’il soit display: block et qu’on lui donne margin: 0 auto.*/
 }
